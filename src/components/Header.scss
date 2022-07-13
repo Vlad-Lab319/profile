@@ -73,7 +73,7 @@ header .logo
 }
 .showcase.active
 {
-  right: 300px;
+  right: 250px;
 }
 .menu
 {
@@ -81,7 +81,9 @@ header .logo
   top: 0;
   right: 0;
   width: 300px;
-  height: 100%;
+  min-height: 100vh;
+
+  // height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,19 +107,19 @@ header .logo
   color: #03a9f4; 
 }
 
-@media (max-width: 991px)
-{
-  .showcase,
-  .showcase header
-  {
-    padding: 40px;
-  }
-  .home h2
-  {
-    font-size: 3em;
-  }
-  .home h3
-  {
-    font-size: 2em;
-  }
-}
+// @media (max-width: 991px)
+// {
+//   .showcase,
+//   .showcase header
+//   {
+//     padding: 40px;
+//   }
+//   .home h2
+//   {
+//     font-size: 3em;
+//   }
+//   .home h3
+//   {
+//     font-size: 2em;
+//   }
+// }

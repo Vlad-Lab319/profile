@@ -68,7 +68,7 @@ function Stack() {
           <WebRTC height={logoProps.height} width={logoProps.width} fill={logoProps.color} />
           
         </div>
-        <div className='color-picker'>
+        <div className='color-picker mobile'>
             {/* picker */}
           {/* <div className='color-picker-label'> */}
 
