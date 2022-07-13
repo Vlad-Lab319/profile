@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './Header.scss';
-import './Mobile.scss';
 import Home from './Home';
 import Demo from './Demo';
 import Websites from './Websites';
