@@ -1,0 +1,21 @@
+// .nav {
+//   position: fixed;
+// }
+.navbar {
+  // position: absolute;
+  position: fixed;
+  // background-color: #052142;
+  background-color: #282c34;
+  color: white;
+  font-size: 24px;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid;
+
+  ul {
+    list-style: none;
+  }
+}

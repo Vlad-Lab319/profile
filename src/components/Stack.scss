@@ -1,0 +1,27 @@
+.stack {
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  z-index: 10;
+  color: #fff;
+
+  &:hover .color-picker {
+    visibility: visible;
+    // color: yellow;
+  }
+
+  &-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .color-picker {
+    // width: 50%;
+    margin-top: 2em;
+    align-self: center;
+    visibility: hidden;
+  }
+
+}
