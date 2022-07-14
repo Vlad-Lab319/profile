@@ -7,7 +7,7 @@ function Contacts() {
 
 
   return (
-    <div>
+    <div className='contacts'>
       <div className='canvas'>
         <p className='canvas-text'>
           Website
@@ -25,7 +25,6 @@ function Contacts() {
           veremenko@vladcoder.ca
         </p>
       </div>
-      <Social />
       <div className='canvas'>
         <Canvas width={320} height={60} />
         <p className='canvas-text'>
@@ -44,6 +43,7 @@ function Contacts() {
           E-mail
         </p>
       </div>
+      <Social />
 
     </div>
   );
