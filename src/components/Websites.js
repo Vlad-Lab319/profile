@@ -7,6 +7,7 @@ import {
   // onClickThumb,
   // showArrows                    
 } from 'react-responsive-carousel';
+import Image from './Image';
 
 function Websites() {
 
@@ -31,7 +32,8 @@ function Websites() {
     return (
       <div>
         {/* <img src={require(`../assets/img/screenshots/Screenshot_${pic}.webp`)} alt="3Dtoronto WebBP" /> */}
-        <img src={process.env.PUBLIC_URL + `/img/${pic}.webp`} />
+        {/* <img src={process.env.PUBLIC_URL + `/img/${pic}.webp`} /> */}
+        <Image name={pic}/>
         <p className='carousel-legend'>{pic}</p>
       </div>
     )
@@ -41,6 +43,8 @@ function Websites() {
   return (
     <div className='projects'>
       Websites
+      {/* <Image name={'3dtoronto'}/> */}
+
       <Carousel
         showArrows={true}
         // onChange={onChange}
