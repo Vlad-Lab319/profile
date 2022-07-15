@@ -30,7 +30,8 @@ function Websites() {
   const testCarousel = pictures.map((pic, i) => {
     return (
       <div>
-        <img src={require(`../assets/img/screenshots/Screenshot_${pic}.webp`)} alt="3Dtoronto WebBP" />
+        {/* <img src={require(`../assets/img/screenshots/Screenshot_${pic}.webp`)} alt="3Dtoronto WebBP" /> */}
+        <img src={process.env.PUBLIC_URL + `/img/${pic}.webp`} />
         <p className='carousel-legend'>{pic}</p>
       </div>
     )
