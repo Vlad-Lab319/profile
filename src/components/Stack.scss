@@ -5,6 +5,7 @@
   align-content: center;
   z-index: 10;
   color: #fff;
+  width: 70%;
 
   &:hover .color-picker {
     visibility: visible;
@@ -12,6 +13,7 @@
   }
 
   &-icons {
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
