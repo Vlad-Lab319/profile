@@ -29,7 +29,7 @@ function Header() {
         <div className="overlay"></div>
 
         {pageSelector === 'home' && <Home />}
-        {pageSelector === 'demo' && <Demo />}
+        {/* {pageSelector === 'demo' && <Demo />} */}
         {pageSelector === 'websites' && <Websites />}
         {pageSelector === 'contacts' && <Contacts />}
 
