@@ -34,6 +34,10 @@
   .stack {
     width: 100%;
   }
+  .home-text-typer {
+    margin-top: 1em;
+    height: 7em;
+  }
 }
 
 @media all and (min-width:321px) and (max-width: 480px) {
@@ -78,7 +82,7 @@
   }
 
   .home-text-typer {
-    margin-top: 2em;
+    margin-top: 1em;
     height: 7em;
   }
 
@@ -92,9 +96,10 @@
     &-icons {
       gap: 0.5em;
     }
-    // &-icon {
-    //   height: 50%;
-    // }
+  }
+  .home-text-typer {
+    margin-top: 1em;
+    height: 7em;
   }
 }
 
