@@ -39,8 +39,8 @@ function Stack() {
 
   
   const logoProps = {
-    height: (width < 380) ? 60 : 100,
-    width: (width < 380) ? 60 : 100,
+    height: (width < 380) ? 50 : 100,
+    width: (width < 380) ? 50 : 100,
     color: iconColor.background,
     margin: "auto",
   }
