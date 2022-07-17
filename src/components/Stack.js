@@ -1,5 +1,6 @@
 import './Stack.scss';
 import { useState } from 'react';
+import useWindowDimensions from '../hooks/useWindowDimensions';
 import { SketchPicker, ChromePicker, HuePicker } from 'react-color';
 import { ReactComponent as JSLogo } from '../assets/img/js-black-svgrepo-com.svg';
 import { ReactComponent as Sass } from '../assets/img/sass-svgrepo-com.svg';
@@ -23,6 +24,9 @@ import Icon from './Icon';
 
 function Stack() {
 
+  const { height, width } = useWindowDimensions();
+
+
   const [iconColor, setIconColor] = useState({
     background: 'orange',
   });
@@ -35,8 +39,8 @@ function Stack() {
 
   
   const logoProps = {
-    height: 70,
-    width: 70,
+    height: (width < 380) ? 60 : 100,
+    width: (width < 380) ? 60 : 100,
     color: iconColor.background,
     margin: "auto",
   }
@@ -73,8 +77,10 @@ function Stack() {
           onChangeComplete={handleChangeComplete}
         /> */}
         {/* {iconsToRender} */}
-          
+          <div className='stack-icon'>
+
           <Github height={logoProps.height} width={logoProps.width} fill={logoProps.color} />
+          </div>
           <JSLogo height={logoProps.height} width={logoProps.width} fill={logoProps.color} />
           <Sass height={logoProps.height} width={logoProps.width} fill={logoProps.color} />
           <ReactJS height={logoProps.height} width={logoProps.width} fill={logoProps.color} />
