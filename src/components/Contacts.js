@@ -8,7 +8,7 @@ function Contacts() {
 
   return (
     <div className='contacts'>
-      <div className='canvas'>
+      {/* <div className='canvas'>
         <p className='canvas-text'>
           Website
         </p>
@@ -19,13 +19,24 @@ function Contacts() {
           LinkedIn
         </p>
         <Overbracket width={240} height={60} />
-      </div>
+      </div> */}
       <div className='canvas'>
         <p className='canvas-main-text'>
-          veremenko@vladcoder.ca
+          <span>
+            veremenko
+          </span>
+          <span>
+            @
+          </span>
+          <span>
+            vladcoder
+          </span>
+          <span>
+            .ca
+          </span>
         </p>
       </div>
-      <div className='canvas'>
+      {/* <div className='canvas'>
         <Canvas width={320} height={60} />
         <p className='canvas-text'>
           Twitter
@@ -42,7 +53,7 @@ function Contacts() {
         <p className='canvas-text'>
           E-mail
         </p>
-      </div>
+      </div> */}
       <Social />
 
     </div>
