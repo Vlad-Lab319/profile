@@ -1,23 +1,88 @@
 .contacts {
   margin: auto;
   width: 95%;
-  display: flex;
-  flex-direction: column;
+  font-size: 3em;
+  // font-size: 1.5em;
+  color: #fff;
+  display: grid;
+  grid-template-columns: minmax(20px, 0.3fr) 280px 60px 260px 80px;
+  // grid-template-columns: minmax(5px, 0.4fr) 140px 30px 130px 30px;
+  grid-template-columns: fit-content;
+  grid-template-rows: repeat(6, 1fr);
 
 }
 
 .canvas {
-  width: 95%;
-  // min-width: 120px;
+  //   width: 95%;
+  //   // min-width: 120px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   color: #fff;
+  //   &-main-text{
+  //     font-size: 1.5em;
+  //     color:orange;
+  //   }
+  //   &-text {
+  //     font-size: 0.75em;
+  //   }
+  font-size: 0.3em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #fff;
-  &-main-text{
-    font-size: 1.5em;
-    color:orange;
-  }
-  &-text {
-    font-size: 0.75em;
-  }
+  justify-content: center;
+
+}
+
+.website {
+  grid-row: 1;
+  grid-column: 4 / 6;
+}
+
+.linkedin {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.full-contact {
+  grid-row: 3;
+  grid-column: 2 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.twitter {
+  grid-row: 4;
+  grid-column: 3 / 5;
+}
+
+.insta {
+  grid-row: 5;
+  grid-column: 4 / 6;
+}
+
+.e-mail {
+  grid-row: 6;
+  grid-column: 2 / 6;
+}
+
+.span-1 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.span-2 {
+  grid-row: 3;
+  grid-column: 3;
+}
+
+.span-3 {
+  grid-row: 3;
+  grid-column: 4;
+}
+
+.span-4 {
+  grid-row: 3;
+  grid-column: 5;
 }

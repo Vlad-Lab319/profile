@@ -1,10 +1,20 @@
-
-
 @media all and (min-width:960px) and (max-width: 1024px) {
+
   /* put your css styles in here */
   .stack {
     width: 100%;
   }
+
+  .contacts {
+    font-size: 3em;
+    grid-template-columns: minmax(20px, 0.3fr) 280px 60px 260px 80px;
+
+  }
+
+  .canvas {
+    font-size: 0.4em;
+  }
+
 }
 
 @media all and (min-width:801px) and (max-width: 959px) {
@@ -13,9 +23,23 @@
   .stack {
     width: 100%;
   }
+
+ .contacts {
+    font-size: 3em;
+    grid-template-columns: minmax(20px, 0.3fr) 280px 60px 260px 80px;
+
+  }
+
+  .canvas {
+    font-size: 0.4em;
+  }
+ 
+
+
 }
 
 @media all and (min-width:769px) and (max-width: 800px) {
+
   /* put your css styles in here */
   .stack {
     width: 100%;
@@ -23,6 +47,7 @@
 }
 
 @media all and (min-width:569px) and (max-width: 768px) {
+
   /* put your css styles in here */
   .stack {
     width: 100%;
@@ -30,10 +55,12 @@
 }
 
 @media all and (min-width:481px) and (max-width: 568px) {
+
   /* put your css styles in here */
   .stack {
     width: 100%;
   }
+
   .home-text-typer {
     margin-top: 1em;
     height: 8em;
@@ -42,22 +69,7 @@
 
 @media all and (min-width:321px) and (max-width: 480px) {
   /* put your css styles in here */
-  // header .logo {
-  //   color: red;
-  // }
-
-
-  // .stack {
-
-  //   .color-picker {
-  //     margin-top: 2em;
-  //     align-self: center;
-  //     visibility: visible;
-  //   }
-
-  // }
   header .logo {
-    // color: red;
     font-size: 1em;
   }
 
@@ -76,6 +88,7 @@
 
   .stack {
     width: 100%;
+
     &-icons {
       gap: 0.5em;
     }
@@ -84,6 +97,16 @@
   .home-text-typer {
     margin-top: 1em;
     height: 8em;
+  }
+
+  .contacts {
+    font-size: 1.25em;
+    grid-template-columns: minmax(5px, 0.4fr) 115px 25px 105px 30px;
+
+  }
+
+  .canvas {
+    font-size: 0.5em;
   }
 
 }
@@ -93,27 +116,54 @@
   /* put your css styles in here */
   .stack {
     width: 100%;
+
     &-icons {
       gap: 0.5em;
     }
   }
+
   .home-text-typer {
     margin-top: 1em;
     height: 8em;
+  }
+
+  .contacts {
+    font-size: 1em;
+    grid-template-columns: minmax(5px, 0.2fr) 95px 20px 85px 30px;
+
+  }
+
+  .canvas {
+    font-size: 0.6em;
   }
 }
 
 
 
-@media all and (max-width: 320px) and (orientation:landscape) {
+@media all and (max-height: 400px) and (orientation:landscape) {
+
   /* styles here */
   .stack {
     width: 100%;
+
     &-icons {
       gap: 0.5em;
     }
-    // &-icon {
-    //   height: 50%;
-    // }
+
   }
+
+  .contacts {
+    font-size: 2em;
+    grid-template-columns: minmax(5px, 0.4fr) 185px 35px 165px 30px;
+
+  }
+
+  .canvas {
+    font-size: 0.4em;
+  }
+
+  .logo {
+    visibility: hidden;
+  }
+
 }
