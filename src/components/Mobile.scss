@@ -4,6 +4,17 @@
   .stack {
     width: 100%;
   }
+
+  .contacts {
+    font-size: 3em;
+    grid-template-columns: minmax(20px, 0.3fr) 280px 60px 260px 80px;
+
+  }
+
+  .canvas {
+    font-size: 0.4em;
+  }
+
 }
 
 @media all and (min-width:801px) and (max-width: 959px) {
@@ -13,16 +24,16 @@
     width: 100%;
   }
 
-
-  .contacts {
-    font-size: 2em;
-    grid-template-columns: minmax(5px, 0.4fr) 190px 40px 170px 30px;
+ .contacts {
+    font-size: 3em;
+    grid-template-columns: minmax(20px, 0.3fr) 280px 60px 260px 80px;
 
   }
 
   .canvas {
     font-size: 0.4em;
   }
+ 
 
 
 }
@@ -58,22 +69,7 @@
 
 @media all and (min-width:321px) and (max-width: 480px) {
   /* put your css styles in here */
-  // header .logo {
-  //   color: red;
-  // }
-
-
-  // .stack {
-
-  //   .color-picker {
-  //     margin-top: 2em;
-  //     align-self: center;
-  //     visibility: visible;
-  //   }
-
-  // }
   header .logo {
-    // color: red;
     font-size: 1em;
   }
 
@@ -104,8 +100,8 @@
   }
 
   .contacts {
-    font-size: 1.5em;
-    grid-template-columns: minmax(5px, 0.4fr) 140px 30px 130px 30px;
+    font-size: 1.25em;
+    grid-template-columns: minmax(5px, 0.4fr) 115px 25px 105px 30px;
 
   }
 
