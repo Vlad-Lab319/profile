@@ -7,63 +7,54 @@ import {
   // onClickThumb,
   // showArrows                    
 } from 'react-responsive-carousel';
-import Image from './Image';
+// import Image from './Image';
 
 function Websites() {
 
   const pictures = [
-    '3dtoronto',
-    'aphrodite',
-    'clarion',
-    'ewheel',
-    'webrtc',
+    {
+      "pic":'3dtoronto',
+      "description": "3d virtual tour for real estate",
+      "url": "http://3dtoronto.ca/11BogertAve3303/",
+    },
+    {
+      "pic":'aphrodite',
+      "description": "cosmetics online store",
+      "url": "https://aphroditeskincare.online/",
+    },
+    {
+      "pic":'clarion',
+      "description": "online messenger",
+      "url": "https://github.com/Vlad-Lab319/lhl-final",
+    },
+    {
+      "pic":'ewheel',
+      "description": "electric scooters online store and rental service",
+      "url": "https://e-wheel.ca/",
+    },
+    {
+      "pic":'webrtc',
+      "description": "video call",
+      "url": "https://github.com/Vlad-Lab319/lhl-final",
+    },
   ];
 
-  const pics = [
-
-  ]
-
-  const testCarousel = pictures.map((pic, i) => {
+  const carouselMain = pictures.map((pic, i) => {
     return (
-      <div>
-        <Image name={pic} />
-        <p className='carousel-legend'>{pic}</p>
-      </div>
+      <a href={pic.url}>
+        <img src={require(`../assets/img/jpg/Screenshot_${pic.pic}.jpg`)} alt={pic.pic} className="carousel-img" />
+        <p className="carousel-legend">{pic.description}</p>
+      </a>
     )
-
   })
-
-  const carousel =
-    <div>
-      <Carousel>
-        {/* <img src={require("../assets/img/screenshots/Screenshot_3dtoronto.webp")} alt="" className='carousel-img'/>
-        <img src={require("../assets/img/screenshots/Screenshot_clarion.webp")} alt=""className='carousel-img'/>
-        <img src={require("../assets/img/screenshots/Screenshot_aphrodite.webp")} alt="" className='carousel-img'/>
-        <img src={require("../assets/img/screenshots/Screenshot_ewheel.webp")} alt=""className='carousel-img'/>
-        <img src={require("../assets/img/screenshots/Screenshot_webrtc.webp")} alt=""className='carousel-img'/> */}
-        <img src={require("../assets/img/jpg/Screenshot_3dtoronto.jpg")} alt="" className='carousel-img'/>
-        <img src={require("../assets/img/jpg/Screenshot_clarion.jpg")} alt=""className='carousel-img'/>
-        <img src={require("../assets/img/jpg/Screenshot_aphrodite.jpg")} alt="" className='carousel-img'/>
-        <img src={require("../assets/img/jpg/Screenshot_ewheel.jpg")} alt=""className='carousel-img'/>
-        <img src={require("../assets/img/jpg/Screenshot_webrtc.jpg")} alt=""className='carousel-img'/>
-        {/* {testCarousel} */}
-      </Carousel>
-    </div>
-
-
-
 
   return (
     <div className='projects'>
-      {/* Websites */}
-      {/* <Image name={'3dtoronto'}/> */}
-
-      {/* <Carousel
-        showArrows={true}
-      >
-        {testCarousel}
-      </Carousel> */}
-      {carousel}
+      <div>
+        <Carousel>
+          {carouselMain}
+        </Carousel>
+      </div>
     </div>
 
   );
