@@ -17,8 +17,8 @@ function Home() {
       <div className='home'>
 
         <aside className="home-text">
-          <h2>Never Stop To </h2>
-          <h3>Explore The World</h3>
+          <h2>Never Stop </h2>
+          <h3>Exploring The World</h3>
           {/* <a href="#">Explore</a> */}
           <div className="home-text-typer">
             <Typewriter
