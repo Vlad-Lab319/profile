@@ -37,6 +37,12 @@ function Stack() {
     setIconColor(newColor);
   }
 
+  const handleChange = (color) => {
+    const newColor = {};
+    newColor["background"] = color.hex;
+    setIconColor(newColor);
+  }
+
   
   const logoProps = {
     height: (width < 380) ? 50 : 100,
@@ -94,6 +100,7 @@ function Stack() {
         <div className='color-picker mobile'>
           <HuePicker
             color={iconColor.background}
+            onChange={handleChange}
             onChangeComplete={handleChangeComplete}
 
           />
