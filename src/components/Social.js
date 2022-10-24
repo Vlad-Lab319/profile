@@ -4,6 +4,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 
 function Social() {
 
@@ -32,6 +33,11 @@ function Social() {
       <li>
         <a href="https://twitter.com/vladcoder">
           <TwitterIcon color="secondary" />
+        </a>
+      </li>
+      <li>
+        <a href="https://resume.creddle.io/resume/fa0mvpkt2bk">
+          <PictureAsPdfIcon color="secondary" />
         </a>
       </li>
     </ul>
