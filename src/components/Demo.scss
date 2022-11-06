@@ -1,6 +1,10 @@
 .demo {
-  z-index: 99;
+  z-index: 20;
   p {
     color: #fff;
+  }
+  button {
+    z-index: 99;
+    
   }
 }

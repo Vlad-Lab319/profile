@@ -7,7 +7,8 @@
   // font-size: 1.5em;
   color: #fff;
   display: grid;
-  grid-template-columns: minmax(20px, 0.3fr) 280px 60px 260px 80px;
+  grid-template-columns: minmax(50px, 0.75fr) 280px 60px 260px 80px;
+  // grid-template-columns: minmax(10px, 0.3fr) 280px 60px 260px 80px;
   // grid-template-columns: minmax(5px, 0.4fr) 140px 30px 130px 30px;
   grid-template-columns: fit-content;
   grid-template-rows: repeat(6, 1fr);
@@ -87,4 +88,15 @@
 .span-4 {
   grid-row: 3;
   grid-column: 5;
+}
+
+.dancer {
+//   background-color: '#111a21';
+//   width: '100vw';
+//   height: '100vh';
+grid-row:1/7;
+grid-column: 1/2;
+display:flex;
+z-index: 11;
+height: 100%;
 }
