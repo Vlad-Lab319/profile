@@ -40,7 +40,7 @@ function Header() {
           <li><a href="#" onClick={() => {setPageSelector('home'); toggleMenu()}}>Home</a></li>
           {/* <li><a href="#" onClick={() => {setPageSelector('demo'); toggleMenu()}}>Demo</a></li> */}
           <li><a href="#" onClick={() => {setPageSelector('websites'); toggleMenu()}}>Projects</a></li>
-          <li><a href="#" onClick={() => {setPageSelector('contacts'); toggleMenu()}}>Contact</a></li>
+          <li><a href="#" onClick={() => {setPageSelector('contacts'); toggleMenu()}}>Contacts</a></li>
         </ul>
       </div>
     </>

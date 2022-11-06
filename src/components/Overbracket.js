@@ -5,7 +5,7 @@ function Overbracket(props) {
 
   const {width, height} = props;
 
-  const refCanvas = useRef(null);
+  const refBrackets = useRef(null);
 
   const draw = (ctx, frameCount) => {
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
@@ -25,7 +25,7 @@ function Overbracket(props) {
 
   useEffect(() => {
 
-    const canvas = refCanvas.current
+    const canvas = refBrackets.current
     const context = canvas.getContext('2d')
     let frameCount = 0
     let animationFrameId
@@ -45,7 +45,7 @@ function Overbracket(props) {
 
   return (
     // <div>
-      <canvas ref={refCanvas} width={width} height={height}/>
+      <canvas ref={refBrackets} width={width} height={height}/>
     // </div>
   )
 }

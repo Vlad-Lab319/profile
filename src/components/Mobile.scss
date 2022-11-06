@@ -8,7 +8,13 @@
   .contacts {
     font-size: 3em;
     grid-template-columns: minmax(20px, 0.3fr) 280px 60px 260px 80px;
+    grid-template-rows: repeat(9, 1fr);
 
+  }
+
+  .dancer {
+    grid-row: 7/10;
+    grid-column: 1/6;
   }
 
   .canvas {
@@ -27,7 +33,12 @@
  .contacts {
     font-size: 3em;
     grid-template-columns: minmax(20px, 0.3fr) 280px 60px 260px 80px;
+    grid-template-rows: repeat(9, 1fr);
+  }
 
+  .dancer {
+    grid-row: 7/10;
+    grid-column: 1/6;
   }
 
   .canvas {
@@ -102,7 +113,13 @@
   .contacts {
     font-size: 1.25em;
     grid-template-columns: minmax(5px, 0.4fr) 115px 25px 105px 30px;
+    grid-template-rows: repeat(9, 1fr);
 
+  }
+
+  .dancer {
+    grid-row: 7/10;
+    grid-column: 1/6;
   }
 
   .canvas {
@@ -130,7 +147,13 @@
   .contacts {
     font-size: 1em;
     grid-template-columns: minmax(5px, 0.2fr) 95px 20px 85px 30px;
+    grid-template-rows: repeat(9, 1fr);
 
+  }
+
+  .dancer {
+    grid-row: 7/10;
+    grid-column: 1/6;
   }
 
   .canvas {
@@ -155,7 +178,12 @@
   .contacts {
     font-size: 2em;
     grid-template-columns: minmax(5px, 0.4fr) 185px 35px 165px 30px;
+    grid-template-rows: repeat(10, 1fr);
+  }
 
+  .dancer {
+    grid-row: 7/10;
+    grid-column: 1/6;
   }
 
   .canvas {
