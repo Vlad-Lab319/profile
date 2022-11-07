@@ -1,10 +1,13 @@
+import React from 'react';
+import {hot} from 'react-hot-loader';
+
 import Header from './components/Header';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Stack from './components/Stack';
 import './components/Mobile.scss';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header/>
@@ -15,4 +18,4 @@ function App() {
   );
 }
 
-export default App;
+export default hot(module)(App);

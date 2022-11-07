@@ -1,4 +1,5 @@
 import './Websites.scss';
+import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import {
   Carousel,
@@ -41,8 +42,8 @@ function Websites() {
 
   const carouselMain = pictures.map((pic, i) => {
     return (
-      <a href={pic.url}>
-        <img src={require(`../assets/img/jpg/Screenshot_${pic.pic}.jpg`)} alt={pic.pic} className="carousel-img" />
+      <a href={pic.url} key={i}>
+        <img src={`./assets/img/jpg/Screenshot_${pic.pic}.jpg`} alt={pic.pic} className="carousel-img" />
         <p className="carousel-legend">{pic.description}</p>
       </a>
     )

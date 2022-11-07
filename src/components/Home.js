@@ -1,4 +1,5 @@
 import './Home.scss';
+import React from 'react';
 import Typewriter from 'typewriter-effect';
 import Social from './Social';
 import Stack from './Stack';
