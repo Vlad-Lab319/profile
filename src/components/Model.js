@@ -9,7 +9,7 @@ export default function Model(
   { ...props },
   ) {
     const group = useRef();
-    const { nodes, materials, animations } = useGLTF("/dancer.glb");
+    const { nodes, materials, animations } = useGLTF("./assets/3d/dancer.glb");
     const { actions } = useAnimations(animations, group);
     
     useEffect(() => {
@@ -34,4 +34,4 @@ export default function Model(
   )
 }
 
-useGLTF.preload("/dancer.glb")
+useGLTF.preload("./assets/3d/dancer.glb")
