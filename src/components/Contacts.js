@@ -108,7 +108,7 @@ function Contacts() {
           E-mail
         </p>
       </div>
-      {/* <div className='dancer'>
+      <div className='dancer'>
 
         <Canvas
           camera={{ position: [2, 0, 12, 25], fov: 15 }}
@@ -124,7 +124,7 @@ function Contacts() {
           </Suspense>
           <OrbitControls />
         </Canvas>
-      </div> */}
+      </div>
 
       <Social />
     </div>
