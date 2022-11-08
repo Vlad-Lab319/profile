@@ -34,8 +34,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build && copyfiles public/dancer.glb build -f",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "copy": "copyfiles test_folder/*.* build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
