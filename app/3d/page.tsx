@@ -1,12 +1,11 @@
 "use client";
 import React from "react";
 console.log("React version:", React.version);
-import dynamic from "next/dynamic";
 
 const Page3D = () => {
   return (
-    <div>
-      <h1>3D Model</h1>
+    <div className="h-full w-full">
+      <h1 className="m-16 text-white">3D Model</h1>
     </div>
   );
 };

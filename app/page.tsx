@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import Stack from "./components/home/Stack";
 import TypeWriter from "./components/home/TypeWriter";
+import dynamic from "next/dynamic";
+
+// const Stack = dynamic(() => import("./components/home/Stack"), {
+//   ssr: false, // This ensures the component is not SSR'd
+// });
 
 export default function IndexPage() {
   return (
