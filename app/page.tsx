@@ -23,7 +23,7 @@ export default function IndexPage() {
           <TypeWriter />
         </div>
       </aside>
-      <div className="w-full h-full row-start-2 landscape:col-start-2 landscape:row-start-1">
+      <div className="pb-4 w-full h-full row-start-2 landscape:col-start-2 landscape:row-start-1">
         <Stack />
       </div>
     </div>

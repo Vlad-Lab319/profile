@@ -1,10 +1,7 @@
-import useWindowDimensions from "@/lib/hooks/useWindowDimensions";
 import Overbracket from "./Overbrackets";
 import Brackets from "./Brackets";
 
 const ContactInfo = () => {
-  // const { height, width } = useWindowDimensions();
-
   let wh = 40;
   let ww = {
     website: 480,
@@ -13,37 +10,6 @@ const ContactInfo = () => {
     instagram: 480,
     email: 800,
   };
-
-  // if (width < 450) {
-  //   ww["website"] = 400;
-  //   ww["linkedin"] = 480;
-  //   ww["x"] = 400;
-  //   ww["instagram"] = 400;
-  //   ww["email"] = 800;
-  // } else if (width < 800) {
-  //   ww["website"] = 380;
-  //   ww["linkedin"] = 320;
-  //   ww["x"] = 360;
-  //   ww["instagram"] = 380;
-  //   ww["email"] = 720;
-  // } else {
-  //   ww["website"] = 480;
-  //   ww["linkedin"] = 480;
-  //   ww["x"] = 420;
-  //   ww["instagram"] = 480;
-  //   ww["email"] = 720;
-  // }
-
-  // if (height < 450) {
-  //   wh = 40;
-  //   ww["website"] = 420;
-  //   ww["linkedin"] = 420;
-  //   ww["x"] = 420;
-  //   ww["instagram"] = 240;
-  //   ww["email"] = 480;
-  // } else {
-  //   wh = 60;
-  // }
 
   return (
     <div className="w-full h-full m-0 pt-8 px-4 max-h-[calc(100vh/3*2)] landscape:max-h-[calc(100vh-100vh/6)] grid grid-rows-11 grid-cols-23 items-center justify-center text-center text-lg">
